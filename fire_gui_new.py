@@ -34,25 +34,25 @@ def detect_fire(frame, fire_threshold=0):
         duration = datetime.now() - fire_start_time
         duration=int(duration.total_seconds())
         if duration == 10:
-            fo=open(r"C:\Users\Pranav Kumar\Desktop\data.txt", "a")
+            fo=open(r"data.txt", "a")
             fo.write("\n FIRE ALARM ON! ")
             current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             fo.write(current_time)
             fo.close()
         elif duration == 20 :
-            fo=open(r"C:\Users\Pranav Kumar\Desktop\data.txt", "a")
+            fo=open(r"data.txt", "a")
             fo.write("\n WATER SPRINKLER ON! ")
             current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             fo.write(current_time )
             fo.close()
         #elif duration == 30 :
-           # fo=open(r"C:\Users\Pranav Kumar\Desktop\data.txt", "a")
+           # fo=open(r"data.txt", "a")
            # fo.write("\n POWER OFF! ")
            #current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
            #fo.write(current_time )
            #fo.close()
         elif duration == 30:
-            fo = open(r"C:\Users\Pranav Kumar\Desktop\data.txt", "a")
+            fo = open(r"data.txt", "a")
             fo.write("\n CALL FOR FIRE AID! ")
             current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             fo.write(current_time)
@@ -60,7 +60,7 @@ def detect_fire(frame, fire_threshold=0):
         else:
            status_label.config(text=f"Fire Detected! (Coverage: {fire_coverage * 100:.2f}%)", font=fire_font)
            current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-           fo = open(r"C:\Users\Pranav Kumar\Desktop\data.txt", "a") # safer than w mode
+           fo = open(r"data.txt", "a") # safer than w mode
            fo.write("\nfire detected : ")
            fo.write(current_time)
            fo.write("\n")
