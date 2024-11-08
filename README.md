@@ -37,6 +37,7 @@ Logging: Events, including detection times and responses, are recorded for revie
   
 Determining optimal HSV thresholds for various fire conditions.
 Ensuring reliable Raspberry Pi-to-computer interfacing.
+
 Future Scope:
 
 Integration of location and image transmission to aid responders.
