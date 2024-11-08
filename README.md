@@ -15,9 +15,11 @@ Fire alarm activated after 10 seconds of continuous detection.
 Water sprinkler system triggered at 30 seconds.
 Emergency services notified after 60 seconds.
 # System Requirements
+
    Software
 Python with OpenCV: For image processing and analysis.
 Raspberry Pi OS: The primary operating system for running the detection software.
+
    Hardware
 Raspberry Pi 4B: Chosen for its processing power and versatility.
 Web Camera: Captures images for analysis.
