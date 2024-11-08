@@ -17,10 +17,12 @@ Emergency services notified after 60 seconds.
 # System Requirements
 
    Software
-Python with OpenCV: For image processing and analysis.
+   
+   Python with OpenCV: For image processing and analysis.
 Raspberry Pi OS: The primary operating system for running the detection software.
 
    Hardware
+   
 Raspberry Pi 4B: Chosen for its processing power and versatility.
 Web Camera: Captures images for analysis.
 # How It Works
@@ -31,9 +33,11 @@ The system calculates fire coverage based on the binary mask.
 If the fire persists, responses escalate from alarms to activating sprinklers and notifying fire services.
 Logging: Events, including detection times and responses, are recorded for review.
 # Challenges and Future Enhancements
-  # Current Challenges:
+  Current Challenges:
+  
 Determining optimal HSV thresholds for various fire conditions.
 Ensuring reliable Raspberry Pi-to-computer interfacing.
-# Future Scope:
+Future Scope:
+
 Integration of location and image transmission to aid responders.
 Implementation of a rotating camera for broader coverage.
